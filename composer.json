@@ -2,9 +2,7 @@
     "name": "sourecode/git",
     "type": "library",
     "description": "A simple wrapper for Git",
-    "keywords": [
-        "git"
-    ],
+    "keywords": ["git"],
     "license": "MIT",
     "authors": [
         {
@@ -26,6 +24,11 @@
         "exclude-from-classmap": [
             "/Tests/"
         ]
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1-dev"
+        }
     },
     "minimum-stability": "dev"
 }
