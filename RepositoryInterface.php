@@ -19,7 +19,7 @@ use Symfony\Component\Process\Process;
 interface RepositoryInterface
 {
     /**
-     * @param Array<array-key, string|bool> $parameters
+     * @param array<array-key, string|bool> $parameters
      */
     public static function executeGit(
         array $parameters,
@@ -35,7 +35,7 @@ interface RepositoryInterface
     public function getDirectory(): string;
 
     /**
-     * @param Array<array-key, string|bool> $parameters
+     * @param array<array-key, string|bool> $parameters
      */
     public function execute(array $parameters, string $input = null, array $environment = []): Process;
 
