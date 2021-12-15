@@ -51,7 +51,7 @@ class Conflict implements ConflictInterface
         if (!$this->resolved) {
             $pathname = $this->file->getPathname();
             $contents = new UnicodeString($this->file->getContents());
-            $resolved = $contents->replace($this->all, $value);
+            $resolved = (string) $contents->replace($this->all, $value);
 
             file_put_contents($pathname, $resolved);
 
